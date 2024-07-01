@@ -8,19 +8,18 @@ import {
   Navigate
 } from "react-router-dom";
 import './App.css';
-import Login from './pages/Customer/Login/Login';
-import Register from './pages/Customer/Login/Register';
-import Dashboard from './pages/Customer/Dashboard/Dashboard';
+import LoginRoutes from './routes/Login';
+import DashboardRoutes from './routes/Dashboard';
+
 import { Button, Space } from 'antd';
 
 const App: React.FC = () => {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/customer/login" Component={Login} />
-        <Route path="/customer/register" Component={Register} />
-        <Route path="/customer/dashboard" Component={Dashboard} />
-        <Route path="/" element={<Navigate to="/customer/login" />} />
+        <Route path="/*" Component={LoginRoutes } />
+        <Route path="/*" Component={DashboardRoutes} />
+        
       </Routes>
     </BrowserRouter>
   );
