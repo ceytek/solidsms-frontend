@@ -4,7 +4,8 @@ import {
   BrowserRouter,
   Routes,
   Route,
-  Link
+  Link,
+  Navigate
 } from "react-router-dom";
 import './App.css';
 import Login from './pages/Customer/Login/Login';
@@ -16,10 +17,10 @@ const App: React.FC = () => {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<Home />} />
         <Route path="/customer/login" Component={Login} />
         <Route path="/customer/register" Component={Register} />
         <Route path="/customer/dashboard" Component={Dashboard} />
+        <Route path="/" element={<Navigate to="/customer/login" />} />
       </Routes>
     </BrowserRouter>
   );
