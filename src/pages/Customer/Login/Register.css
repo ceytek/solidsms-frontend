@@ -1,0 +1,23 @@
+/* src/pages/Customer/Register/CustomerRegister.css */
+.register-container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border: 1px solid #d9d9d9;
+    border-radius: 4px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+    text-align: center; /* Merkezi hizalama için */
+  }
+  
+  .register-title {
+    margin-bottom: 24px;
+    font-size: 24px;
+    font-weight: bold;
+    color: #000000; /* Başlığın rengini siyah yap */
+  }
+  
+  .ant-form-item {
+    margin-bottom: 16px;
+  }
+  
