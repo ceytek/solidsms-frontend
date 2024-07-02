@@ -1,11 +1,11 @@
 import React from 'react';
 import { Route, Routes } from 'react-router-dom';
-import Dashboard from '../pages/Customer/Dashboard/Dashboard';
+import Dashboard from '../pages/Dealer/Dashboard/Dashboard';
 
 const DashboardRoutes: React.FC = () => {
   return (
     <Routes>
-      <Route path="/customer/dashboard" Component={Dashboard} />
+      <Route path="/dealer/dashboard" Component={Dashboard} />
     </Routes>
   );
 };

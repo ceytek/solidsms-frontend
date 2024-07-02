@@ -29,7 +29,7 @@ const tailFormItemLayout = {
   },
 };
 
-const CustomerRegister: React.FC = () => {
+const Register: React.FC = () => {
   const [form] = Form.useForm();
 
   const onFinish = (values: any) => {
@@ -166,4 +166,4 @@ const CustomerRegister: React.FC = () => {
   );
 };
 
-export default CustomerRegister;
+export default Register;

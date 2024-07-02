@@ -8,6 +8,8 @@ import {
 } from '@ant-design/icons';
 import type { MenuProps } from 'antd';
 import { Breadcrumb, Layout, Menu, theme } from 'antd';
+import Statistics from '../../../components/Statistics'
+// Statistics bileşenini import ettik
 
 const { Header, Content, Footer, Sider } = Layout;
 
@@ -66,7 +68,7 @@ const App: React.FC = () => {
               borderRadius: borderRadiusLG,
             }}
           >
-            Bill is a cat.
+            <Statistics /> {/* Statistics bileşenini burada kullanıyoruz */}
           </div>
         </Content>
         <Footer style={{ textAlign: 'center' }}>

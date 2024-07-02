@@ -5,7 +5,7 @@ import { Button, Checkbox, Form, Input } from 'antd';
 import { Link } from 'react-router-dom';
 import './Login.css'; // Stil dosyasını import ediyoruz
 
-const CustomerLogin: React.FC = () => {
+const Login: React.FC = () => {
   const onFinish = (values: any) => {
     console.log('Received values of form: ', values);
   };
@@ -57,4 +57,4 @@ const CustomerLogin: React.FC = () => {
   );
 };
 
-export default CustomerLogin;
+export default Login;
